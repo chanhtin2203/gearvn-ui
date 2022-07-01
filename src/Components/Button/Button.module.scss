@@ -1,0 +1,28 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.primary {
+    font-size: 1.4rem;
+    background-color: var(--primary);
+}
+
+.small {
+    width: 120px;
+    height: 40px;
+}
+
+.large {
+    width: 440px;
+    background-color: #ff424e;
+    padding: 13px 0;
+    font-size: 2.2rem;
+}
+
+.title {
+    color: var(--white);
+}

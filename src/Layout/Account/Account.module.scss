@@ -1,0 +1,97 @@
+.user-account {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: var(--color-input);
+    cursor: pointer;
+}
+
+.icon-account {
+    font-size: 3rem;
+}
+
+.wrapper {
+    margin-left: 8px;
+    display: inline-block;
+    line-height: 1.5rem;
+}
+
+.login-logout {
+    font-size: 1.3rem;
+}
+
+.account {
+    font-size: 1.4rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.icon-arrow-down {
+    position: absolute;
+    top: -50%;
+    transform: translateY(50%);
+    margin-left: 4px;
+}
+
+.popup-navbar {
+    width: 266px;
+    height: 220px;
+}
+
+.popup-accout {
+    padding: 10px;
+}
+
+.list-item {
+    width: 100%;
+    height: 41px;
+    margin: 10px 0;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.login-account {
+    display: flex;
+    justify-content: center;
+    background-color: #fdd835;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    line-height: 41px;
+    font-weight: 400;
+    color: var(--text-color-default);
+}
+
+// Social
+
+.login-fb {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #3b5998;
+}
+
+.img-social {
+    padding: 0 5px;
+}
+
+.title-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 300;
+    border-left: 1px solid var(--white);
+}
+
+// Google
+.login-google {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #df4a32;
+}
