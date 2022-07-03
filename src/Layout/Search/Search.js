@@ -17,9 +17,14 @@ function Search({ children }) {
         setSearchResult(e.target.value);
     };
 
+    const hanldeHideOnClick = () => {
+        setSearchResult(false);
+    };
+
     return (
         <div>
             <Tippy
+                onClickOutside={hanldeHideOnClick}
                 placement="bottom"
                 interactive={true}
                 visible={searchResult.length > 0}

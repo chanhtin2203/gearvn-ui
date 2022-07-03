@@ -8,13 +8,22 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import thumbnails from '~/assets/data/thumbnail';
 import Topbar from './Topbar/Header';
-import { HeaderPrimary } from '~/Layout/components/Header/Header_primary';
+import HeaderPrimary from '~/Layout/components/Header/Header_primary';
+import HeaderInnerNavbar from './HeaderInnerNavbar';
+import Sidebar from '../Sidebar';
+import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
 function Header() {
+    const [onCategory, setOnCategory] = useState(true);
+
+    const handleClick = () => {
+        setOnCategory(true);
+    };
+
     return (
-        <div className={cx('container')}>
+        <div>
             <div className={cx('thumnail-wrapper')}>
                 <Swiper
                     spaceBetween={30}
@@ -41,7 +50,10 @@ function Header() {
                 </Swiper>
             </div>
             <Topbar />
-            <HeaderPrimary />
+            <div className={cx('header-wrapper')}>
+                <HeaderPrimary />
+                <HeaderInnerNavbar onClick={handleClick}>{onCategory && <Sidebar />}</HeaderInnerNavbar>
+            </div>
         </div>
     );
 }

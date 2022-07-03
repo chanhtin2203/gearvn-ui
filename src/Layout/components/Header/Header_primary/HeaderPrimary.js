@@ -15,7 +15,7 @@ function HeaderPrimary() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('container')}>
-                <Link to='/' className={cx('logo')}>
+                <Link to="/" className={cx('logo')}>
                     <img
                         className={cx('logo-img')}
                         src="https://gstatic.gearvn.com/2021/08/Logo-GEARVN_pc-300x70-1-1.png"
