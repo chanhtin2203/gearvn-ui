@@ -4,6 +4,8 @@ import { publicRoutes } from '~/routes';
 import DefaultLayout from '~/Layout';
 ('test');
 ('test nè');
+('test nè');
+('test nè');
 function App() {
     return (
         <Router>
